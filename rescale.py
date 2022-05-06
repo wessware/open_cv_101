@@ -2,10 +2,13 @@ import cv2 as cv
 
 # image displaying
 
+
+"""
 img = cv.imread('./images/img_1.jpg')
 
 
 cv.imshow('Image_One', img)
+"""
 
 
 def rescaleFrame(frame, scale=0.75):
@@ -18,7 +21,7 @@ def rescaleFrame(frame, scale=0.75):
 
 
 # video displaying
-"""
+
 capture = cv.VideoCapture('./videos/vid_1.mp4')
 
 while True:
@@ -34,4 +37,3 @@ while True:
 
 capture.release()
 cv.destroyAllWindows()
-"""
