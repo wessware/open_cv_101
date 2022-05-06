@@ -1,11 +1,17 @@
 from tkinter import Frame
+from turtle import width
 import cv2 as cv
 
 
-#img = cv.imread('./images/img_1.jpg')
+img = cv.imread('./images/img_1.jpg')
 
 
-#cv.imshow('Image_One', img)
+cv.imshow('Image One', img)
+
+
+cv.waitKey(0)
+"""
+video display
 capture = cv.VideoCapture('./videos/vid_1.mp4')
 
 while True:
@@ -18,3 +24,4 @@ while True:
 
 capture.release()
 cv.destroyAllWindows()
+"""
