@@ -44,5 +44,7 @@ def rotate(img, angle, rotPoint=None):
 rotated = rotate(img, 45)
 cv.imshow('Rotated Image', rotated)
 
+rotated_rotated = rotate(rotated, -45)
+cv.imshow('Rotated Rotated Image', rotated_rotated)
 
 cv.waitKey(0)
