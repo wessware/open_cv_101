@@ -6,7 +6,7 @@ img = cv.imread('./images/img_1.jpg')
 
 cv.imshow('Image One', img)
 
-
+"""
 # Image translation
 def translate(img, x, y):
 
@@ -47,4 +47,21 @@ cv.imshow('Rotated Image', rotated)
 rotated_rotated = rotate(rotated, -45)
 cv.imshow('Rotated Rotated Image', rotated_rotated)
 
+# image resizing
+
+resize = cv.resize(img, (500, 500), interpolation=cv.INTER_AREA)
+cv.imshow('Resized Image', resize)
+
+# image flipping
+# flip codes 0 => flip vertical,1 => flip horizontal,-1 => flip vertical & horizontal
+"""
+# vertical
+flip = cv.flip(img, 0)
+cv.imshow('Flipped Vertical', flip)
+# horizontal
+flip = cv.flip(img, 1)
+cv.imshow('Flipped Horizontal', flip)
+
+flip = cv.flip(img, -1)
+cv.imshow('Flipped Vertical Horizontal', flip)
 cv.waitKey(0)
