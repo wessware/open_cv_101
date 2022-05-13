@@ -29,7 +29,7 @@ cv.line(blank, (100, 250), (300, 400), (0, 255, 0), thickness=3)
 cv.imshow('Line', blank)
 """
 # write text on image
-cv.putText(blank, 'Hello OpenCv', (225, 225),
+cv.putText(blank, 'Hello OpenCv', (50, 225),
            cv.FONT_HERSHEY_TRIPLEX, 1.0, (0, 225, 0), 2)
 cv.imshow('Text', blank)
 cv.waitKey(0)
