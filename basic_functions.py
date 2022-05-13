@@ -1,7 +1,7 @@
 import cv2 as cv
 
 
-img = cv.imread('./images/img_1.jpg')
+img = cv.imread('./images/img_7.jpg')
 cv.imshow('Image 3', img)
 
 
@@ -20,5 +20,14 @@ cv.imshow('Blur', blur)
 cany = cv.Canny(img, 125, 175)
 cv.imshow('Canny', cany)
 # """
+
+# image dilation
+dilated = cv.dilate(cany, (7, 7), iterations=3)
+cv.imshow('Dilated Image', dilated)
+
+# image eroding
+eroded = cv.erode(dilated, (7, 7), iterations=3)
+cv.imshow('Eroded Image', eroded)
+
 
 cv.waitKey(0)
