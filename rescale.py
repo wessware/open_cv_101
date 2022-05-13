@@ -11,6 +11,7 @@ cv.imshow('IMG', img)
 
 
 def rescaleFrame(frame, scale=.75):
+    # function works for resizing images, videos and live videos
     width = int(frame.shape[1] * scale)
     height = int(frame.shape[0] * scale)
 
@@ -21,6 +22,14 @@ def rescaleFrame(frame, scale=.75):
 
 resized_image = rescaleFrame(img)
 cv.imshow('Image', resized_image)
+
+# video resize second alternative
+
+
+def changeRes(width, height):
+    # function only works for resizing live videos
+    capture.set(3, width)
+    capture.set(4, height)
 # video resize
 
 
