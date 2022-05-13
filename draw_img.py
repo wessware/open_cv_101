@@ -11,7 +11,7 @@ cv.imshow('Blank', blank)
 #img = cv.imread('./images/img_2.jpg')
 #cv.imshow('Img', img)
 
-blank[:] = 0, 255, 0
+blank[200:300, 300:400] = 255, 255, 0
 cv.imshow('Green', blank)
 
 cv.waitKey(0)
