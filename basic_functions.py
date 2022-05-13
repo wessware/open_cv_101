@@ -1,7 +1,7 @@
 import cv2 as cv
 
 
-img = cv.imread('./images/img_2.jpg')
+img = cv.imread('./images/img_1.jpg')
 cv.imshow('Image 3', img)
 
 
@@ -12,7 +12,12 @@ cv.imshow('Gray Image 3', gray)
 """
 # image blur
 blur = cv.GaussianBlur(img, (11, 11), cv.BORDER_DEFAULT)
-cv.imshow('Blur', img)
+cv.imshow('Blur', blur)
 
+"""
+# Edge cascade
+cany = cv.Canny(img, 125, 175)
+cv.imshow('Canny', cany)
+"""
 
 cv.waitKey(0)
