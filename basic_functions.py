@@ -29,5 +29,8 @@ cv.imshow('Dilated Image', dilated)
 eroded = cv.erode(dilated, (7, 7), iterations=3)
 cv.imshow('Eroded Image', eroded)
 
+# image resizing
+resized = cv.resize(img, (500, 500), interpolation=cv.INTER_AREA)
+cv.imshow('Resized Image 6', resized)
 
 cv.waitKey(0)
