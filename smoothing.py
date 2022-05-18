@@ -10,4 +10,8 @@ cv.imshow('Image 7', img)
 average = cv.blur(img, (7, 7))
 cv.imshow('Average BLur', average)
 
+# Gaussian BLur
+gauss = cv.GaussianBlur(img, (7, 7), 0)
+cv.imshow('Gaussain Blur', gauss)
+
 cv.waitKey(0)
