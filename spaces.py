@@ -5,11 +5,11 @@ import matplotlib.pyplot as plt
 img = cv.imread('./images/img_1.jpg')
 cv.imshow('Image I', img)
 
-
+"""
 plt.imshow(img)
 plt.show()
 
-"""
+
 # BGR tp Grayscale
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 cv.imshow('Grayscale', gray)
@@ -25,4 +25,12 @@ cv.imshow('HSV', hsv)
 lab = cv.cvtColor(img, cv.COLOR_BGR2LAB)
 cv.imshow('LAB', lab)
 """
-# cv.waitKey(0)
+# BGR to RGB
+
+rgb = cv.cvtColor(img, cv.COLOR_BGR2RGB)
+cv.imshow('RGB', rgb)
+
+plt.imshow(rgb)
+plt.show()
+
+cv.waitKey(0)
