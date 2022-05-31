@@ -10,15 +10,15 @@ circle = cv.circle(blank.copy(), (200, 200), 200, 255, -1)
 cv.imshow('Rectangle', rectangle)
 cv.imshow('Circle', circle)
 
-# bitwise AND
+# bitwise AND ==> finds the intersecting regions
 bitwise_AND = cv.bitwise_and(rectangle, circle)
 #v.imshow('Bitwise AND', bitwise_AND)
 
-# bitwise OR
+# bitwise OR ==> finds the intersecting and non-intersecting regions
 bitwise_OR = cv.bitwise_or(rectangle, circle)
 #cv.imshow('Bitwise OR', bitwise_OR)
 
-# bitwise XOR
+# bitwise XOR ==> finds the non-intersecting regions
 bitwise_XOR = cv.bitwise_xor(rectangle, circle)
 cv.imshow('Bitwise XOR', bitwise_XOR)
 
