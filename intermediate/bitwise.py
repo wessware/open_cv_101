@@ -20,6 +20,10 @@ bitwise_OR = cv.bitwise_or(rectangle, circle)
 
 # bitwise XOR ==> finds the non-intersecting regions
 bitwise_XOR = cv.bitwise_xor(rectangle, circle)
-cv.imshow('Bitwise XOR', bitwise_XOR)
+#cv.imshow('Bitwise XOR', bitwise_XOR)
+
+# bitwise NOT ==> inverts the binary color
+bitwise_NOT = cv.bitwise_not(rectangle)
+cv.imshow('Bitwise NOT rect', bitwise_NOT)
 
 cv.waitKey(0)
