@@ -23,7 +23,7 @@ bitwise_XOR = cv.bitwise_xor(rectangle, circle)
 #cv.imshow('Bitwise XOR', bitwise_XOR)
 
 # bitwise NOT ==> inverts the binary color
-bitwise_NOT = cv.bitwise_not(rectangle)
-cv.imshow('Bitwise NOT rect', bitwise_NOT)
+bitwise_NOT = cv.bitwise_not(circle)
+cv.imshow('Bitwise NOT circle', bitwise_NOT)
 
 cv.waitKey(0)
